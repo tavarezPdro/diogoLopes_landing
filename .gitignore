@@ -1,0 +1,21 @@
+# Dependencies are installed independently in each environment.
+node_modules/
+.npm-cache/
+
+# Vite production output is generated during deployment.
+dist/
+
+# Local editor and environment files.
+.vscode/
+.env
+.env.*
+!.env.example
+
+# OS and debug artifacts.
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
