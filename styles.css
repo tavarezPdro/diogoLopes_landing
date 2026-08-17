@@ -170,6 +170,10 @@ footer > div strong { margin-top: 5px; font-size: 12px; letter-spacing: .06em; }
 .whatsapp-float svg { width: 25px; fill: currentColor; }
 .whatsapp-float span { font-size: 12px; font-weight: 800; }
 
+@media (min-width: 981px) {
+  footer { padding-right: clamp(190px, 12vw, 230px); }
+}
+
 .reveal { opacity: 0; transform: translateY(22px); transition: opacity .75s ease, transform .75s cubic-bezier(.2,.7,.2,1); }
 .reveal.is-visible { opacity: 1; transform: translateY(0); }
 .benefit:nth-child(2), .service-item:nth-child(2), .steps li:nth-child(2) { transition-delay: .08s; }
