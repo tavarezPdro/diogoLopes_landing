@@ -65,9 +65,7 @@ h1 i, h2 i { display: inline-block; font-style: normal; color: var(--teal); font
 .trust-row span { font-size: 11px; color: #7c8a91; margin-top: 4px; }
 .hero-portrait { height: 100%; position: relative; display: flex; align-items: end; justify-content: center; z-index: 2; }
 .portrait-backdrop { position: absolute; width: min(34vw, 480px); aspect-ratio: 1; border-radius: 50%; background: linear-gradient(145deg, var(--teal), var(--navy)); opacity: .13; bottom: 18%; }
-.photo-placeholder { display: grid; place-items: center; border: 2px dashed rgba(30,129,126,.55); background: rgba(255,255,255,.48); color: var(--teal); }
-.photo-placeholder > span { padding: 13px 18px; border-radius: 999px; background: rgba(255,255,255,.88); box-shadow: 0 10px 30px rgba(8,38,61,.08); font-size: 12px; font-weight: 800; letter-spacing: .16em; text-align: center; }
-.hero-photo-placeholder { position: relative; width: min(32vw, 440px); height: 76%; min-height: 510px; margin-bottom: 8%; border-radius: 220px 220px 28px 28px; box-shadow: var(--shadow); }
+.hero-portrait img { height: 92%; max-height: 760px; width: auto; object-fit: contain; object-position: bottom; position: relative; filter: saturate(1.04) contrast(1.03) drop-shadow(0 24px 28px rgba(8,38,61,.14)); mix-blend-mode: multiply; -webkit-mask-image: radial-gradient(ellipse 49% 52% at 50% 51%, #000 57%, rgba(0,0,0,.96) 66%, rgba(0,0,0,.66) 78%, transparent 100%); mask-image: radial-gradient(ellipse 49% 52% at 50% 51%, #000 57%, rgba(0,0,0,.96) 66%, rgba(0,0,0,.66) 78%, transparent 100%); }
 .care-note { position: absolute; left: 3%; bottom: 12%; padding: 15px 20px; border-radius: 12px; background: rgba(255,255,255,.88); backdrop-filter: blur(12px); display: flex; align-items: center; gap: 12px; box-shadow: var(--shadow); }
 .care-pulse { width: 10px; height: 10px; border-radius: 50%; background: var(--teal); box-shadow: 0 0 0 7px rgba(30,129,126,.12); }
 .care-note p { margin: 0; display: flex; flex-direction: column; }
@@ -99,9 +97,8 @@ h1 i, h2 i { display: inline-block; font-style: normal; color: var(--teal); font
 .about { min-height: 720px; display: grid; grid-template-columns: .85fr 1.15fr; color: white; background: var(--navy); }
 .about-photo { position: relative; overflow: hidden; min-height: 680px; }
 .about-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(8,38,61,.65), transparent 48%); }
-.about-photo-placeholder { width: 100%; height: 100%; min-height: 680px; border: 0; border-radius: 0; background: linear-gradient(145deg, #123d58, #0b2d46); color: var(--gold-light); }
-.about-photo-placeholder > span { position: relative; z-index: 2; background: rgba(8,38,61,.72); box-shadow: none; }
-.about-photo-caption { position: absolute; z-index: 2; left: 38px; bottom: 35px; font-size: 11px; line-height: 1.5; text-transform: uppercase; letter-spacing: .15em; }
+.about-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 25%; filter: saturate(.7) contrast(1.05); }
+.about-photo span { position: absolute; z-index: 2; left: 38px; bottom: 35px; font-size: 11px; line-height: 1.5; text-transform: uppercase; letter-spacing: .15em; }
 .about-copy { padding: clamp(65px, 9vw, 130px); align-self: center; position: relative; }
 .about-copy::before { content: "“"; position: absolute; top: 65px; right: 11%; color: rgba(201,162,75,.12); font-size: 260px; line-height: 1; font-family: Georgia, serif; }
 .section-label.light { color: var(--gold-light); }
@@ -195,7 +192,7 @@ footer > div strong { margin-top: 5px; font-size: 12px; letter-spacing: .06em; }
   .hero { min-height: 900px; height: auto; padding-top: 125px; grid-template-columns: 1fr; background: linear-gradient(170deg, #fff 0%, #fff 49%, #edf4f3 49%); }
   .hero-copy { padding: 0; }
   .hero-portrait { height: 570px; margin-top: 20px; }
-  .hero-photo-placeholder { width: min(62vw, 440px); height: 88%; min-height: 0; margin-bottom: 0; }
+  .hero-portrait img { height: 100%; }
   .portrait-backdrop { width: 430px; max-width: 80vw; }
   .benefit-list { grid-template-columns: repeat(2, 1fr); }
   .benefit:nth-child(3) { border-left: 1px solid #dce5e5; }
@@ -221,7 +218,6 @@ footer > div strong { margin-top: 5px; font-size: 12px; letter-spacing: .06em; }
   .trust-row div { padding: 0 13px; }
   .trust-row div:nth-child(3) { border-left: 0; padding-left: 0; }
   .hero-portrait { height: 510px; margin: 15px -30px 0; }
-  .hero-photo-placeholder { width: min(78vw, 390px); height: 90%; }
   .care-note { left: 8%; bottom: 8%; }
   .benefits { padding: 85px 22px; }
   .section-intro { display: block; margin-bottom: 45px; }
